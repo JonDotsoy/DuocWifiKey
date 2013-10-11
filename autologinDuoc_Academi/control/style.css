@@ -1,0 +1,22 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel1 {
+	width: 100%;
+	border: solid 1px black;
+}
+
+.panel1 div span {
+	display: inline-block;
+	width: 100%;
+}
+
+.panel1 div input {
+	width: 250px;
+}
+
+.panel1 div.action {
+	border-top: solid 1px black;
+	text-align: center;
+}

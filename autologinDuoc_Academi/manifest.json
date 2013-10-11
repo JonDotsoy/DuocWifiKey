@@ -1,0 +1,41 @@
+{
+	"author": "Jonathan Delgado \u003Cjonad.correo@gmail.com\u003E",
+	"content_scripts": [
+		{
+			"all_frames": true,
+			"js": ["js/tt.js"],
+			"matches": ["https://10.82.1.30/user/user_login_auth.jsp", "https://10.82.1.30/user/user_redirect.jsp"],
+			"run_at": "document_start"
+		}, {
+			"all_frames": true,
+			"js": ["js/capture.js"],
+			"matches": ["https://10.82.1.30/user/user_login_auth.jsp", "https://10.82.1.30/user/user_redirect.jsp"],
+			"run_at": "document_end"
+		}, {
+			"all_frames": true,
+			"js": ["js/jquery-1.10.1.min.js", "js/background.js"],
+			"matches": ["https://10.82.1.30/user/user_login_auth.jsp"],
+			"run_at": "document_end"
+		}, {
+			"all_frames": true,
+			"js": ["js/base64.js", "js/jquery-1.10.1.min.js", "js/endfint.js"],
+			"matches": ["https://*/*", "http://*/*"],
+			"run_at": "document_end"
+		}
+	],
+	"description": "Permite ingresar rapidamente a la red WIFI dela sede DuocUC",
+	"icons": {
+		"128": "icon128.png",
+		"16": "icon16.png",
+		"48": "icon48.png"
+	},
+	"manifest_version": 2,
+	"minimum_chrome_version": "28",
+	"name": "Auto Login Duoc",
+	"offline_enabled": true,
+	"options_page": "control/option.html",
+	"permissions": ["https://10.82.1.30/user/user_login_auth.jsp", "storage", "webRequest"],
+	"update_url": "http://jonad.in/DuocWifiKey/update.xml",
+	"version": "1.5.142",
+	"web_accessible_resources": ["8-0.gif", "candado.png"]
+}
