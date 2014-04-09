@@ -13,17 +13,12 @@
 			"run_at": "document_end"
 		}, {
 			"all_frames": true,
-			"js": ["js/jquery-1.10.1.min.js", "js/background.js"],
-			"matches": ["https://10.82.1.30/user/user_login_auth.jsp"],
-			"run_at": "document_end"
-		}, {
-			"all_frames": true,
-			"js": ["js/base64.js", "js/jquery-1.10.1.min.js", "js/endfint.js"],
-			"matches": ["https://*/*", "http://*/*"],
+			"js": ["js/jquery-1.10.1.min.js","js/btnCheckAutoLogin.js","js/background.js"],
+			"matches": ["https://*/*","http://*/*"],
 			"run_at": "document_end"
 		}
 	],
-	"description": "Permite ingresar rapidamente a la red WIFI dela sede DuocUC",
+	"description": "Ingresa de forma automática a todos tus servicios de DuocUC",
 	"icons": {
 		"128": "icon128.png",
 		"16": "icon16.png",
@@ -35,7 +30,6 @@
 	"offline_enabled": true,
 	"options_page": "control/option.html",
 	"permissions": ["https://10.82.1.30/user/user_login_auth.jsp", "storage", "webRequest"],
-	"update_url": "http://jonad.in/DuocWifiKey/update.xml",
-	"version": "1.5.142",
+	"version": "2.0.22",
 	"web_accessible_resources": ["8-0.gif", "candado.png"]
 }
