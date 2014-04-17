@@ -1,22 +1,35 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
+.optionControl {
+    padding: 10px 30px;
+    background-color: #ddd;
+    box-shadow: 0px 0px 20px #888;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    margin-bottom: 20px;
 }
 
-.panel1 {
-	width: 100%;
-	border: solid 1px black;
+@media (max-width: 400px) {
+    .container {
+        padding: 0px;
+    }
+    .optionControl {
+        padding: 10px 30px;
+        background-color: #ddd;
+        box-shadow: 0px 0px 10px #888;
+        border-radius: 0px;
+        border: solid 1px #fff;
+        border-width: 1px 0px 1px 0px;
+        margin-bottom: 10px;
+    }
+}
+#decoration {
+    position: relative;
+    display: block;
+    text-align: center;
 }
 
-.panel1 div span {
-	display: inline-block;
-	width: 100%;
+#decoration .objet {
+    font-size: 200px;
 }
-
-.panel1 div input {
-	width: 250px;
-}
-
-.panel1 div.action {
-	border-top: solid 1px black;
-	text-align: center;
+#decoration .objet:before {
+    content: "\e008";
 }
