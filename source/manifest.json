@@ -20,9 +20,12 @@
 	],
 	"description": "Ingresa de forma automática a todos tus servicios de DuocUC",
 	"icons": {
-		"128": "icon128.png",
-		"16": "icon16.png",
-		"48": "icon48.png"
+		"512": "logotipo/512.png",
+		"256": "logotipo/256.png",
+		"128": "logotipo/128.png",
+		"16": "logotipo/16.png",
+		"48": "logotipo/48.png",
+		"8": "logotipo/8.png"
 	},
 	"manifest_version": 2,
 	"minimum_chrome_version": "28",
@@ -30,6 +33,6 @@
 	"offline_enabled": true,
 	"options_page": "control/option.html",
 	"permissions": ["https://10.82.1.30/user/user_login_auth.jsp", "storage", "webRequest"],
-	"version": "2.0.22",
+	"version": "2.1.10",
 	"web_accessible_resources": ["8-0.gif", "candado.png"]
 }
