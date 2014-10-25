@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"> -->
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!-- <h1>'Allo, 'Allo!</h1> -->
+        
+        <div class="container">
+             
+             <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                             
+                    <h1>Definir Credenciales de Acceso DuocUC</h1>
+                    <p class="help-block">Se recomienda no realizar esta acción en sitios públicos</p>
+
+                    <p id="alertW" class="alert alert-warning hidden"></p>
+
+                    <form name="formLogin" method="POST">
+                        <div class="form-group">
+                            <label for="username">Nombre de usuario</label>
+                            <input class="form-control" type="text" id="username" name="user">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input class="form-control" type="password" id="password" name="pass">
+                        </div>
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group">
+                                <button class="btn btn-success" type="submit">
+                                    <i class="fa fa-save"></i> Guardar
+                                </button>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-danger" type="reset">
+                                    <i class="fa fa-remove"></i> Reiniciar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                 </div>
+             </div>
+
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/options.js -->
+        <script src="scripts/options.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

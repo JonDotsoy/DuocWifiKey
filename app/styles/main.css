@@ -1,0 +1,14 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	min-width: 300px;
+	
+}
+#nofication {
+	display: none;
+}
+#loadKeys {
+	width: 100%;
+	padding: 20px;
+	display: block;
+}

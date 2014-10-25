@@ -1,3 +1,0 @@
-var toIncludeCheckAutoLogin = function (Objet) {
-	
-}
