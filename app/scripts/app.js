@@ -35,6 +35,13 @@
 			form: "login",
 			user: "edit[username]",
 			pass: "edit[password]"
+		},
+		"https://10.82.1.30/user/user_login_auth.jsp": {
+			script: "click",
+			form: "0",
+			user: "username",
+			pass: "password",
+			submit: "ok"
 		}
 	}
 	var URLlocal = null;
